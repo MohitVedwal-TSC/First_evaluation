@@ -1689,7 +1689,7 @@ body{
         z-index: 1;
         background-color: #f4f4f4;
         width: 90%;
-        height: 43.9%;
+        height: calc(43.9%);
     }
 
     #check:checked ~ .nav_links a{
@@ -2224,7 +2224,7 @@ body{
     }
 }
 
-@media only screen and (max-device-width:390px){
+@media only screen and (min-device-width:300px) and (max-device-width:390px){
     .Header {
         background-size: 100% 67vh;
     }
@@ -2297,5 +2297,9 @@ body{
 
     .location_info{
         line-height: 16px;
+    }
+
+    .btn1,.btn2{
+        font-size:13px;
     }
 }
