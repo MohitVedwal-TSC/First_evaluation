@@ -443,13 +443,14 @@ body{
 .pricing_heading{
     padding-bottom:3.5%;
 }
+
+.pricing_head{
+    color:#023666;
+}
+
 .price_plan{
     width:73%;
     padding-bottom: 4%;
-}
-
-.rates,.real_estate,.interior_design{
-    /* border:1px solid; */
 }
 
 .rates{
@@ -473,24 +474,25 @@ body{
 }
 
 .real_estate{
-    background-color: #ffc300;
+    background-color:white;
     padding-top:10px;
+    box-shadow: 1px 5px 8px #9c9c9c75;
+    margin-right: 1%;
 }
 
 .interior_design{
     position:relative;
     padding-top:10px;
-    box-shadow: 5px 5px 5px rgb(170, 170, 170);
+    box-shadow: 1px 5px 8px #9c9c9c75;
     background-color: white;
 }
 
 .btn1{
     margin:4em;
-    background-color: white;
+    background-color: #ffc300;
 }
 
 .btn2{
-    /* margin:2em 3em; */
     background-color: #ffc300;
 }
 
@@ -498,7 +500,6 @@ body{
     font-size:2rem;
     color:#023666;
     font-weight:800;
-    /* line-height:0; */
 }
 
 .price_para{
@@ -536,12 +537,14 @@ body{
 }
 
 /* ***********************Use Cases Section******************* */
+.cases{
+    background-image: url('./images/260164\ \(1\).png');
+    background-position: 100%;
+}
 
 .Use_cases_div{
     display:flex;
     justify-content: center;
-    background-image: url('./images/260164\ \(1\).png');
-    background-position: 100%;
 }
 
 .case_div{
@@ -827,7 +830,7 @@ body{
 
 
 .house_images{
-    height:22vh;
+    height:21vh;
     width:32%;
     margin-left:5%;
 }
@@ -931,6 +934,7 @@ body{
 .contact_icons{
     /* border:1px solid; */
     padding-left:4%;
+    padding-top: 1%;
 }
 
 .icon_row1,.icon_row2,.icon_row3{
@@ -955,7 +959,7 @@ body{
 
 .about{
     padding-left: 3%;
-    margin-top:-10px;
+    margin-top:-20px;
     line-height: 20px;
 }
 
@@ -977,16 +981,15 @@ body{
 }
 
 /* ***********************Footer1 Section***************** */
-.Footer{
-    background-image: url('./images/service-bg-01.png');
-    background-position: center;
-}
 
 .footer1{
     background-color: #f95403;
     display:flex;
     justify-content: center;
     padding:2%;
+    background-image: url('./images/service-bg-01.png');
+    background-position-y:bottom;
+    background-size: 83%;
 }
 
 .footer1_content_div{
@@ -1014,6 +1017,9 @@ body{
 /* **********************Footer2 Section ******************/
 
 .footer2{
+    background-image: url('./images/service-bg-01.png');
+    background-size: 53%;
+    background-position-y: bottom;
     display:flex;
     justify-content: center;
     background-color: black;
@@ -1596,10 +1602,6 @@ body{
         margin-bottom:-2%;
     }
     
-    .location_info{
-        margin-top: -21px;
-    }
-
     .footer1_content {
         width: 96%;
     }
@@ -1664,6 +1666,7 @@ body{
     }
     .nav_links{
         display:none;
+        width:0%;
     }
 
     .checkbox{
@@ -1684,16 +1687,27 @@ body{
         display:flex;
         flex-direction: column;
         position: absolute;
-        top: 7%;
+        top: 9.5%;
         right: 2%;
         z-index: 1;
         background-color: #f4f4f4;
-        width: 90%;
-        height: calc(43.9%);
+        animation-name: animation;
+        animation-duration: 1s;
+        /* animation-timing-function: ease-in-out; */
+        height: calc(42.5%);
+    }
+
+    @keyframes animation {
+        0%{
+            width:0%;
+        }
+        100%{
+            width:90%;
+        }
     }
 
     #check:checked ~ .nav_links a{
-        padding: 6.5%;
+        padding: 6%;
         color:black;
         font-weight: 700;
     }
@@ -2122,6 +2136,10 @@ body{
 
     /* ***************Contact Us Section**************** */
 
+    .about {
+        margin-top: -14px;
+    }
+
     .contact_us {
         width: 100%;
     }
@@ -2158,6 +2176,10 @@ body{
 
     .contact_icons {
         padding-top:7%;
+    }
+
+    .contact_icon_heading{
+        font-size: 16px;
     }
 
     .contact_icon_buttons {
@@ -2303,3 +2325,74 @@ body{
         font-size:13px;
     }
 }
+
+
+/* **************************Animations & Transitions ******************** */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+.feature_card:hover{
+    box-shadow: 5px 5px 10px rgb(24, 10, 46);
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+.real_estate:hover,.interior_design:hover{
+    transform: scale(1.1);
+    transition:0.5s;
+    position:relative;
+    z-index:1;
+    background-color: #ffc300;
+    /* box-shadow: 2px 5px 5px #ffc300; */
+}
+
+.real_estate:hover button,.interior_design:hover button{
+    background-color: white;
+}
+
+.example_div_cards:hover{
+    transform: scale(1.1);
+    transition:0.5s;
+}
+
+.real_estate_card_img:hover .triangle_1,.interior_design_card_img:hover .triangle_3{
+    bottom: -2%;
+    transform: rotate(270deg);
+    top:auto;
+}
+
+.real_estate_card_img:hover .triangle_2{
+    top: 18.5%;
+    transform: rotate(270deg);
+    right: 3.5%;
+    bottom:auto;
+}
+
+.interior_design_card_img:hover .triangle_4{
+    top: -4%;
+    transform: rotate(270deg);
+    right: 3.5%;
+}
+
+.bruce_hardy_img:hover{
+    scale:300%;
+    transition:0.5s;
+    position:relative;
+    z-index: 2;
+}
+
+.testimonial_div_cards:hover{
+    box-shadow:2px 2px 8px rgb(177, 177, 177);
+}
+
+
