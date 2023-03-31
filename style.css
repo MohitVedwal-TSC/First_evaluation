@@ -1114,7 +1114,7 @@ body{
         z-index: 1;
         background-color: #f4f4f4;
         width: 90%;
-        height: 43.9%;
+        /* height: 43.9%; */
     }
 
     #check:checked ~ .nav_links a{
@@ -1687,14 +1687,14 @@ body{
         display:flex;
         flex-direction: column;
         position: absolute;
-        top: 9.5%;
+        top: 11.5%;
         right: 2%;
         z-index: 1;
         background-color: #f4f4f4;
         animation-name: animation;
         animation-duration: 1s;
         /* animation-timing-function: ease-in-out; */
-        height: calc(42.5%);
+        /* height: calc(42.5%); */
     }
 
     @keyframes animation {
@@ -1707,7 +1707,7 @@ body{
     }
 
     #check:checked ~ .nav_links a{
-        padding: 6%;
+        padding: 8px;
         color:black;
         font-weight: 700;
     }
@@ -2303,8 +2303,8 @@ body{
     }
 
     #check:checked ~ .nav_links {
-        top: 12%;
-        height: 56.2%;
+        top: 11.5%;
+        /* height: 56.2%; */
     }
 
     .details {
