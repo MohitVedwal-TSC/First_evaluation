@@ -1644,10 +1644,7 @@ body{
 }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 480px){
-    .Header{
-        background-size: 100% 50vh;;
-    }
-    
+
     .navbar{
         display:flex;
         justify-content: left;
@@ -2227,9 +2224,9 @@ body{
     }
 }
 
-@media only screen and (max-device-width:380px){
+@media only screen and (max-device-width:390px){
     .Header {
-        background-size: 100% 63vh;
+        background-size: 100% 67vh;
     }
 
     .tour_btn {
@@ -2283,13 +2280,22 @@ body{
         font-size: 11px;
     }
 
-    #check:checked ~ .nav_links{
-        top: 9%;
-        height: 55.1%;
+    #check:checked ~ .nav_links {
+        top: 12%;
+        height: 56.2%;
     }
 
     .details {
         line-height: 4px;
         bottom: -14%;
+    }
+
+    .button {
+        width: 6vw;
+        height: 3.5vh;
+    }
+
+    .location_info{
+        line-height: 16px;
     }
 }
