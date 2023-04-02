@@ -1020,3 +1020,9 @@
     }
 
 }
+
+@media only screen and (width:360px){
+    .analytic_btn{
+        width:33vw;
+    }
+}
