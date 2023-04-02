@@ -170,9 +170,10 @@ body{
     font-weight:600;
     font-size:14px;
     width:35vw;
+    margin-top:-1em;
 }
 .para1{
-    margin-top: -2.5em;
+    margin-top: -3em;
 }
 #analytics_head2{
     font-size:1.8rem;
@@ -192,7 +193,7 @@ body{
     top:-10%;
 }
 .div2{
-    margin-top:-1.5em;
+    margin-top:-2.5em;
 }
 
 /* ************************Services div******************** */

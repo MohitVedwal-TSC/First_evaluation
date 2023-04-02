@@ -4,7 +4,21 @@
 /* For Tablet View */
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body{
+        margin:0;
+    }
+    /* *****************/
     
+    #client_img:hover,.house_images:hover{
+        transition: none!important;
+        transform: none !important;
+        translate: 0 !important;
+        box-shadow: none !important;
+        border:none !important;
+        opacity: 1 !important;
+    }
+
+    /* *****************/
     .Header {
         background-size: 100% 100%;
     }
@@ -18,7 +32,8 @@
         display:none;
         position:relative;
         width:0%;
-        transition:width 0.5s;
+        /* transition-property: width;  */
+        transition-duration: 2s;
     }
     .nav_logo{
         padding-left:3%;
@@ -483,9 +498,15 @@
         font-size:9vw;
     }
 
+    .para1{
+        margin-top:-1.5em;
+    }
     .analytics_para{
         font-size: 13px;
         width: 100%;
+    }
+    .para2{
+        margin-top:0;
     }
 
     .div1{
@@ -934,6 +955,15 @@
     .footer2_buttons{
         padding-right: 1%;
     }
+
+    #client_img:hover,.house_images:hover{
+        transition: none!important;
+        transform: none !important;
+        translate: 0 !important;
+        border:none !important;
+        box-shadow: none !important;
+        opacity: 1 !important;
+    }
 }
 
 @media only screen and (min-device-width:300px) and (max-device-width:390px){
@@ -1013,7 +1043,7 @@
     }
 }
 
-@media only screen and (height:732px){
+@media only screen and (min-device-height:732px) and (max-device-height:736px){
     .Features {
         background-size: auto 135vh;
         padding-bottom: 26%;

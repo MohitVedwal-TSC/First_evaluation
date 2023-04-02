@@ -102,7 +102,7 @@
 .house_images:hover,#client_img:hover{
     transform: scale(1.3);
     transition: 0.5s;
-    border:5px solid #023666;
+    border:2px solid #023666;
     border-radius: 10px;
     position:relative;
     z-index:99;
@@ -136,6 +136,14 @@
 .contact_form input:hover,.contact_form textarea:hover{
     box-shadow: 0px 2px 3px black;
     cursor:pointer; 
+}
+
+.footer1_para:hover{
+    color:black;
+    font-weight: 800;
+}
+.footer2_content_para:hover{
+    color:#f95403;
 }
 
 
