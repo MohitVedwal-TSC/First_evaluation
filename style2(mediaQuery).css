@@ -1,0 +1,1022 @@
+/* **********************Media Query*********************** */
+
+
+/* For Tablet View */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    
+    .Header {
+        background-size: 100% 100%;
+    }
+    .navbar{
+        padding: 2px 0 2px 0;
+    }
+    .nav_div{
+        width:100%;
+    }
+    .nav_links{
+        display:none;
+        position:relative;
+        width:0%;
+        transition:width 0.5s;
+    }
+    .nav_logo{
+        padding-left:3%;
+    }
+    .nav_logo img {
+        width: 100%;
+    }
+    .checkbox{
+        padding-right: 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #hamburger_icon{
+        display:block;
+        font-size: 30px;
+        color: whitesmoke;
+    }
+    #check:checked ~ .nav_links{
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #f4f4f4;
+        width:40%;
+        overflow: scroll;
+        cursor:pointer; 
+    }
+    #check:checked ~ .nav_links a{
+        padding: 10%;
+        color:black;
+        font-weight: 700;
+    }
+    #check:checked ~ .nav_links .horizontal_line{
+        display:block;
+    }
+    #check:checked+label #hamburger_icon{
+        position:absolute;
+        z-index: 5;
+        color: black;
+        top:2%;
+        right:4%;
+    }
+    .nav_btn{
+        display: none;
+    }
+    .tour_heading {
+        line-height: 0px;
+    }
+    .tours {
+        width: 100%;
+        padding-top: 9%;
+        text-align: center;
+    }
+    #affordable_tour{
+        width:100%;
+    }
+    .tour_para{
+        display:flex;
+        justify-content: center;
+        text-align: justify;
+        margin-top:-3.5rem;
+    }
+    .tour_btn{
+        height: 5vh;
+        width: 20%;
+    }
+    .tour_btn_div {
+        padding-bottom: 9%;
+    } 
+    .analytic {
+        width: 100%;
+        flex-direction: row;
+    }
+    .analytics_div{
+        padding-top:5%;
+    }
+    .analytics_para {
+        font-size: 12px;        
+        width: 50vw;
+    }
+    #img1 {
+        width: 31vw;
+        left: -9%;
+        top: -29px;
+    }
+    #img2 {
+        width: 52vw;
+    }
+    .analytics_screen{
+        padding-left:5%;
+    }
+    #analytics_head1 {
+        font-size: 2.5rem;
+    }
+    .div2{
+        line-height:0;
+        margin-top: -1em;
+    }
+    .analytic_btn {
+        width: 16vw;
+        font-size: 0.8rem;
+    }
+    .services{
+        padding-bottom: 12%;
+    }
+    .service {
+        width: 88%;
+    }
+    .heading {
+        font-size: 3rem;
+    }
+    .button {
+        height: 2vh;
+    }
+    .cards{
+        width: 26vw;
+    }
+    .service_img {
+        height:18vh;
+    }
+    .service_card_heading {
+        font-size: 0.8rem;
+    }
+    .service_card_para {
+        font-size: 0.6rem;
+        line-height: 14px;
+    }
+    .details{
+        bottom: -28%;
+    }
+    .Features {
+        background-size: auto;
+        padding-bottom: 16.5%;
+    }
+    .feature_card {
+        padding-top: 14px;
+    }
+    .feature_div_card{
+        height:auto;
+    }
+    .feature_icon_div {
+        width: 7vw;
+        height: 5vh;
+    }
+    #clock {
+        width: 3.5vw;
+    }
+    #analytic,#inventory {
+        width: 3vw;
+    }
+    .feature_head, .analytic_feature_head {
+        font-size: 0.8rem;
+    }
+    .feature_para,.anchor{
+        font-size: 9.5px;
+        line-height: 18px;
+    }
+    .feature_head,.analytic_feature_head{
+        margin-bottom: 3%;
+    }
+    .para_2{
+        width:100%;
+    }
+    .price_plan {
+        width: 88%;
+    }
+    .rates{
+        height:56vh;
+    }
+    .relative{
+        padding-top: 4%;
+    }
+    .pricing_ellipse {
+        top: -20px;
+        right: -3.4rem;
+    }
+    .pricing_ellipse img{
+        width: 87%;
+    }
+    .price_head {
+        font-size: 1.8rem;
+    }
+    .interior_design_para, .virtual_tour_para{
+        font-size:0.7rem;
+    }
+    .price_btn {
+        height: 4vh;
+        font-size: 13px;
+    }
+    .btn1 {
+        margin: 5.1em;
+    }
+    .case_div {
+        width: 95%;
+    }
+    #real_estate_parent {
+        height: 19vh;
+    }
+    .cases_list li {
+        font-size: 10px;
+    }
+    .real_estate_card_img {
+        padding-top: 9%;
+    }
+    .triangle_1 {
+        left: 3.5%;
+        top: 10.5%;
+    }
+
+    .example_para {
+        font-size: 9px;
+        margin-top: -11px;
+    }
+    .example_card h4{
+        font-size:13px;
+    }
+    .lorem_ipsum_example {
+        padding: 11px;
+    }
+    .example {
+        width: 88%;
+    }
+    .client_testimonial {
+        width: 86%;
+    }
+    .testimonial_para {
+        font-size: 8px;
+    }
+    .bruce_hardy_img {
+        width: 10vw;
+        top: -19%;
+        left: 32%;
+    }
+    .bruce_hardy_para_head{
+        margin-top:-2em;
+    }
+    .house_images {
+        height: 9vh;
+        width:38%;
+    }
+    .client_videos_heading{
+        width: 71%;
+    }
+    .client_videos_div_img img {
+        width: 78%;
+    }
+    .button2 {
+        left: 13%;
+    }
+    .button3{
+        left: 50%;
+    }
+    .gallery_ellipse {
+        right: 1%;
+        width: 30%;
+    }
+
+    /* **************Contact us************** */
+    .contact_us {
+        width: 86%;
+    }
+    .name_and_email_input {
+        width: 23.5vw;
+        height: 5vh;
+    }
+    .contact_no input{
+        height:5vh;
+    }
+    .input3{
+        height:10vh;
+    }
+    .contact_button button {
+        height: 3vh;
+        font-size:12px;
+    }
+    .contact_icon_buttons {
+        height: 4vh;
+    }
+    .location_button{
+        width:40%;
+    }
+    .contact_icon_para {
+        font-size: 11px;
+    }
+    .contact_icon_para{
+        margin-top: -14px;
+    }
+    .contact_icons {
+        padding-top: 3%;
+    }   
+
+    /* ********Footer*********** */
+    .footer1_content {
+        width: 87%;
+    }
+    .footer2_content {
+        width: 85%;
+        align-items: center;
+    }
+    .footer2_content_para {
+        font-size: 13px;
+    }
+    .footer2_share_button {
+        width: 3.5vw;
+        height: 3vh;
+    }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 480px){
+
+    .Header {
+        background-size: 100% 100%;
+    }
+    .navbar{
+        display:flex;
+        justify-content: left;
+    }
+    .nav_div{
+        width:100%;
+    }
+    .nav_logo{
+        width: 44%;
+        padding-left: 6px;
+        padding-top:2px    
+    }
+
+    .nav_logo img{
+        width:90%;
+    }
+    .nav_links{
+        display:none;
+        width:0%;
+    }
+
+    .checkbox{
+        padding-right: 4%;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    #hamburger_icon{
+        display:block;
+        font-size: 27px;
+        color: whitesmoke;
+    }
+
+    #check:checked ~ .nav_links{
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #f4f4f4;
+        width:40%;
+    }
+    #check:checked ~ .nav_links a{
+        padding: 10%;
+        color:black;
+        font-weight: 700;
+    }
+    #check:checked ~ .nav_links .horizontal_line{
+        display:block;
+    }
+    #check:checked+label #hamburger_icon{
+        position:absolute;
+        z-index: 5;
+        color: black;
+        top:2.8%;
+        right:4%;
+    }
+    .nav_btn{
+        display: none;
+    }
+
+    #beam{
+        font-size: 1rem;
+    }
+
+    #quick{
+        font-size: 2rem;    
+    }
+
+    #lorem_ipsum{
+        line-height: 27px;
+        font-size: 0.8rem;
+        width:90%;
+        margin:auto;
+    }
+    
+    .virtual_tours{
+        text-align: center;
+    }
+
+    #affordable_tour{
+        font-size:1.5rem;;
+        line-height: 44px;
+        margin-top: -8px;
+        width:100%;
+    }
+
+    .tours{
+        width: 100%;
+        padding-top:4%;
+    }
+
+    .tour_btn{
+        font-size:9px;
+        padding:0;
+        height: 4vh;
+        font-weight: 800;
+        width: 32%;
+    }
+
+    .tour_para{
+        margin-top:0;
+    }
+
+    /* ************Analytic Section************ */
+
+    .analytic{
+        width:100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .analytics_screen {
+        width: 100%;
+    }
+
+    .laptop {
+        left: -7px;
+    }
+
+    #img2{
+        width:100vw;
+    }
+
+    #img1{
+        width: 50%;
+        top: 12px;
+        left: 21px;
+    }
+
+    .home-screen{
+        display:block;
+        width:100%;
+    }
+
+    .about_analytics{
+        width:100%;
+        justify-content: center;
+        text-align: center;
+        padding-top:10%;
+        padding-bottom:5%;
+    }
+
+    #analytics_head1{
+        font-size:9vw;
+    }
+
+    .analytics_para{
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .div1{
+        line-height: 60px;
+    }
+
+    .div2{
+        line-height: 15px;
+        margin-top:0 !important;
+    }
+
+    .analytic_btn{
+        margin:auto;
+        width:30vw; 
+    }
+
+    .heading{
+        font-size: 9vw;
+        font-weight: 800;
+    }
+
+    /* *******************Services******************* */
+
+    .service {
+        width: 100%;
+    }
+
+    .service_card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards{
+        width:88%;
+        margin-bottom:12%;
+    }
+
+    .service_img {
+        width: 100%;
+        height: 33vh;
+        padding-bottom: 9%;
+    }
+
+    .button{
+        width: 4.5vw;
+        height: 2vh;
+    }
+
+    .details{
+        line-height: 4px;
+        bottom: -9%;
+    }
+
+    /* *****************Features********************* */
+
+    .Features{
+        background-size: auto 114vh;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .feature_div{
+        padding-bottom: 25%;
+    }
+
+    .feature_div_card {
+        flex-direction: column;
+        align-items: center;
+        height:59vh;
+        justify-content: flex-start;
+    }
+
+    .feature_card{
+        width: 78%;
+        padding: 8px;
+        margin-bottom: 5%;
+    }
+
+    .feature_icon_div {
+        width: 8.5vw;
+        height: 4vh;
+    }
+
+    .feature_head,.analytic_feature_head{
+        font-size:4vw ;
+    }
+
+    .feature_para, .anchor {
+        font-size: 12.5px;
+        margin-top: -12px;
+        padding-bottom:5%;
+    }
+
+    #clock {
+        width: 4.5vw;
+    }
+
+    #analytic {
+        width: 3.5vw;
+    }
+
+    #inventory {
+        width: 3.5vw;
+    }
+
+    /* *****************Pricing Section******************** */
+
+    .pricing_ellipse{
+        display: none;
+    }
+
+    .price_plan {
+        width: 100%;
+    }
+
+    .rates{
+        flex-direction: column;
+        height:auto;
+    }
+
+    .rate_card{
+        width: 100%;
+    }
+
+    .pricing_heading {
+        padding-bottom: 6.5%;
+        margin-top: -2.5em;
+        color:#023666;
+    }
+
+    .price_btn{
+        margin-bottom: 2em !important;
+        height:5vh;
+        margin:0;
+    }
+
+    .interior_design_para {
+        margin-bottom:5%;
+        margin-top:-3%;
+    }
+
+    .interior_design_para,.interior-design-para{
+        font-size: 12px;
+    }
+
+    .price_head{
+        margin-top:-2%;
+    }
+
+    .virtual_tour_para{
+        margin-top:-2%;
+    }
+
+    .interior_design{
+        padding-bottom:1%;
+    }
+
+    /* ***************Cases Section**************** */
+    
+    .case_div {
+        width: 100%;
+    }
+
+    .cases_cards{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .case_card1, .case_card2 {
+        width: 100%;
+    }
+
+    .case_card1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #real_estate_parent {
+        height: 23vh;
+    }
+
+    #interior_design_card_head, #real_estate_card_head {
+        font-size:18px;
+    }
+
+    .interior_design_card {
+        padding-top: 0%;
+    }
+
+    .real_estate_card_img {
+        padding-top: 10%;
+    }
+
+    .triangle_1 {
+        top: 11.5%;
+    }
+
+    .real_estate_card_img:hover .triangle_2{
+        top:12.5% !important;
+    }
+
+    /* *********************Example Section*************** */
+
+    .example_card{
+        flex-direction: column;
+    }
+
+    .lorem_ipsum_example {
+        padding: 11px;
+    }
+
+    .example {
+        width: 80%;
+    }
+
+    .example_div{
+        text-align: center;
+    }
+
+    .example_para {
+        margin-top:-3vw;
+    }
+
+    .example_div_cards{
+        margin-bottom:5vw;
+    }
+
+    /* *****************Testimonial Section*************** */
+
+    .client_testimonial {
+        width: 100%;
+    }
+
+    .testimonial_card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial_div_cards {
+        width:80%;
+        padding-top: 12%;
+        margin-bottom:17%;
+    }
+
+    .bruce_hardy_img {
+        width: 27%;
+    }
+
+    .bruce_hardy{
+        line-height: 12px;
+        padding-bottom: 4%;
+    }
+
+    .five_star_ratings {
+        width: 20%;
+    }
+
+    .testimonia_head{
+        padding: 6%;
+    }
+
+    /* *******************Content Section***************** */
+
+    .Content {
+        flex-direction: column;
+    }
+    .contact_icons{
+        width:auto;
+    }
+
+    .client_videos_heading, .gallery_div_head h2 {
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .client_videos,.gallery{
+        padding-bottom: 6%;
+    }
+
+    .client_videos_div_head {
+        text-align:center;
+    }
+
+    .client_img{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .client_videos_div_img img {
+        width: 67%;
+        margin-right:0%;
+        background-color: black;
+    }
+
+    .button {
+        width: 6vw;
+        height: 2.8vh;
+    }
+
+    .button1 {
+        right: 13%;
+        top: 48%;
+    }
+
+    .button2 {
+        left: 13%;
+    }
+
+    .button3{
+        width: 8vw;
+        left:47%;
+        right:50%;
+        top:52%;
+    }
+
+    .gallery_div_head h2{
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .gallery_div_img{
+        width:90%;
+        padding-left:10%;
+    }
+
+    .house_images {
+        height: 10vh;
+        width: 45%;
+    }
+
+    .gallery_ellipse {
+        top: -14%;
+        right: -10%;
+    }
+
+    /* ***************Contact Us Section**************** */
+
+    .about {
+        margin-top: -14px;
+    }
+
+    .contact_us {
+        width: 100%;
+    }
+
+    .contact_form_and_icons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name_and_email_input {
+        width: 40vw;
+        height: 5vh;
+    }
+
+    .contact_input {
+        height: 5vh;
+        padding-top:0;
+    }
+
+    .input3{
+        height:10vh;
+        padding-top:2%;
+    }
+
+    .contact_button{
+        text-align: center;
+    }
+
+    .contact_button button {
+        width: 26vw;
+        height: 4vh;
+    }
+
+    .contact_icons {
+        padding-top:7%;
+    }
+
+    .contact_icon_heading{
+        font-size: 16px;
+    }
+
+    .contact_icon_buttons {
+        width: 13%;
+        height: 5vh;
+    }
+
+    .location_button{
+        width:21%;
+    }
+
+    .contact_no,.website_info{
+        line-height: 13px;
+    }
+
+    .contact_icon_heading{
+        margin-bottom:-2%;
+    }
+    
+    .location_info{
+        margin-top: -21px;
+    }
+
+    .footer1_content {
+        width: 96%;
+    }
+
+    .footer1_para {
+        font-size: 10px;
+    }
+
+    .footer2_content {
+        width: 96%;
+    }
+
+    .footer2_share_button {
+        width: 4.5vw;
+        height: 2vh;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4%;
+    }
+
+    .footer2_content_para {
+        font-size: 10px;
+    }
+
+    .fb_icon img {
+        width: 7px;
+    }
+
+    .insta_icon img {
+        width: 13px;
+    }
+
+    .linkedin_icon img {
+        width: 15px;
+    }
+
+    .footer2_buttons{
+        padding-right: 1%;
+    }
+}
+
+@media only screen and (min-device-width:300px) and (max-device-width:390px){
+    .Header {
+        background-size: 100% 67vh;
+    }
+    #check:checked ~ .nav_links{
+        width:50%;
+    }
+    .tour_btn {
+        height: 4.5vh;
+        width: 28%;
+    }
+
+    .analytic_btn {
+        width: 31vw;
+    }
+
+    .Features {
+        background-size: auto 135vh;
+    }
+
+    .feature_div {
+        padding-bottom: 43%;
+    }
+
+    .footer2_share_button {
+        width: 3.5vw;
+        height: 2vh;
+        border-radius: 4px;
+    }
+
+    .footer1_para,.footer2_content_para {
+        font-size: 8px;
+    } 
+
+    .insta_icon img {
+        width: 8px;
+    }
+
+    .fb_icon img {
+        width: 4px;
+    }
+
+    .linkedin_icon img {
+        width: 9px;
+    }
+
+    .contact_icon_buttons {
+        width: 14%;
+        height: 7vh;
+    }
+    .location_button {
+        width: 22.5%;
+    }
+
+    .contact_icon_para {
+        font-size: 11px;
+    }
+
+    .details {
+        line-height: 4px;
+        bottom: -14%;
+    }
+
+    .button {
+        width: 6vw;
+        height: 3.5vh;
+    }
+
+    .location_info{
+        line-height: 16px;
+    }
+
+    .btn1,.btn2{
+        font-size:13px;
+    }
+}
+
+@media only screen and (height:732px){
+    .Features {
+        background-size: auto 135vh;
+        padding-bottom: 26%;
+    }
+
+}

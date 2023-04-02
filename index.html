@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="./style2(mediaQuery).css">
+    <link rel="stylesheet" href="./style3(animations).css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -19,19 +21,19 @@
             <div class="navbar">
                 <div class="nav_div">
                     <div class="nav_logo">
-                        <img src="./images/LogoHorizontalwhite.png">
+                        <img src="./images/LogoHorizontalwhite.png" class="nav_icon">
                     </div>
                     <div class="checkbox">
                         <input type="checkbox" id="check"><label for="check"><i class="fa fa-bars" id="hamburger_icon"></i></label>
                         <div class="nav_links">
                             <hr class="horizontal_line">
-                            <a href="">Home</a><hr class="horizontal_line">
-                            <a href="">Pricing</a><hr class="horizontal_line">
-                            <a href="">Sample Webpage</a><hr class="horizontal_line">
-                            <a href="">Other Services</a><hr class="horizontal_line">
-                            <a href="">Contact Us</a>
+                            <a class="anchor_tag" href="">Home</a><hr class="horizontal_line">
+                            <a class="anchor_tag" href="">Pricing</a><hr class="horizontal_line">
+                            <a class="anchor_tag" href="">Sample Webpage</a><hr class="horizontal_line">
+                            <a class="anchor_tag" href="">Other Services</a><hr class="horizontal_line">
+                            <a class="anchor_tag" href="">Contact Us</a>
                             <hr class="horizontal_line">
-                            <button class="nav_btn btn"><i class="fa fa-phone"></i>9897-654-3210</button>
+                            <button class="nav_btn btn common_btn"><i class="fa fa-phone"></i>9897-654-3210</button>
                         </div>
                     </div>
                 </div>
@@ -51,7 +53,7 @@
                         </p>
                     </div>
                     <div class="tour_btn_div">
-                        <button class="tour_btn btn">Contact Now</button>
+                        <button class="tour_btn btn common_btn">Contact Now</button>
                     </div>
                 </div>
             </div>
@@ -77,7 +79,7 @@
                             incididunt ut labore et dolore magna aliqua. 
                         </p>
                     </div>
-                        <button class="analytic_btn btn">View More</button>
+                        <button class="analytic_btn btn common_btn">View More</button>
                     </div>
                 </div>
             </div>
@@ -93,7 +95,7 @@
                             <div class="floor_detail details">
                                 <h3 class="service_card_heading">Floor Plan to 3D</h3>
                                 <p class="service_card_para">Lorem ipsum dolor sit amet, consectetus adipiscing elit.</p>
-                                <button class="button"><img src="./images/icons8-more-than-30.png"  class="greater_btn"></button>
+                                <button class="button common_btn"><img src="./images/icons8-more-than-30.png"  class="greater_btn"></button>
                             </div>
                         </div>
                         <div class="custom_tour cards">
@@ -101,7 +103,7 @@
                             <div class="custom_tour_detail details">
                                 <h3 class="service_card_heading">Custom Virtual Tours</h3>
                                 <p class="service_card_para">Lorem ipsum dolor sit amet, consectetus adipiscing elit.</p>
-                                <button class="button"><img src="./images/icons8-more-than-30.png"  class="greater_btn"></button>
+                                <button class="button common_btn"><img src="./images/icons8-more-than-30.png"  class="greater_btn"></button>
                             </div>
                         </div>
                         <div class="virtual_reality cards">
@@ -109,7 +111,7 @@
                             <div class="virtual_reality_detail details">
                                 <h3 class="service_card_heading">Guided Virtual Reality</h3>
                                 <p class="service_card_para">Lorem ipsum dolor sit amet, consectetus adipiscing elit.</p>
-                                <button class="button"><img src="./images/icons8-more-than-30.png" class="greater_btn"></button>
+                                <button class="button common_btn"><img src="./images/icons8-more-than-30.png" class="greater_btn"></button>
                             </div>
                         </div>
                     </div>
@@ -174,7 +176,7 @@
                                 Tour valid for 1 Month<br> Additional virtual Tour = 1500 Rs / Property<br> Call to 
                                 action to your Whatsapp, Phone & Email.
                             </p>
-                            <button class="price_btn btn1">Buy Now</button>
+                            <button class="price_btn btn1 common_btn">Buy Now</button>
                         </div>
                         <div class="pricing_ellipse">
                             <img src="./images/ellipse_4.png">
@@ -188,7 +190,7 @@
                                 Additional Virtual Tour / month = 1,000 Rs Per Property<br> Additional Inventory
                                 Hosting = 500 Rs / Month / Property<br> Call to action to your Whatsapp Phone & Email. 
                             </p>
-                            <button class="price_btn btn2">Buy Now</button>
+                            <button class="price_btn btn2 common_btn">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -283,7 +285,7 @@
                             <img src="./images/Layer 18.png" class="bruce_hardy_img img1">
                             <div class="bruce_hardy">
                                 <h3 class="bruce_hardy_heading">Bruce Hardy</h3>
-                                <p class="testimonial_para">Project Manager</p>
+                                <p class="testimonial_para bruce_hardy_para_head">Project Manager</p>
                                 <p class="testimonial_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                     eiusmod tempor incididunt ul labore et dolore  
                                 </p>  
@@ -294,7 +296,7 @@
                             <img src="./images/Layer 18.png" class="bruce_hardy_img img2">
                             <div class="bruce_hardy">
                                 <h3 class="bruce_hardy_heading">Bruce Hardy</h3>
-                                <p class="testimonial_para">Project Manager</p>
+                                <p class="testimonial_para bruce_hardy_para_head">Project Manager</p>
                                 <p class="testimonial_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                     eiusmod tempor incididunt ul labore et dolore  
                                 </p>  
@@ -305,7 +307,7 @@
                             <img src="./images/Layer 18.png" class="bruce_hardy_img img3">
                             <div class="bruce_hardy">
                                 <h3 class="bruce_hardy_heading">Bruce Hardy</h3>
-                                <p class="testimonial_para">Project Manager</p>
+                                <p class="testimonial_para bruce_hardy_para_head">Project Manager</p>
                                 <p class="testimonial_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                     eiusmod tempor incididunt ul labore et dolore  
                                 </p>  
@@ -324,10 +326,10 @@
                         <h2 class="client_videos_heading">Client Videos</h2>
                     </div>
                     <div class="client_videos_div_img"> 
-                        <button class="button client_div_button button1"><img src="./images/greater-than.png"  class="greater_btn"></button>
-                        <button class="button client_div_button button2"><img src="./images/less-than.png"  class="greater_btn"></button> 
-                        <button class="button client_div_button button3"><img src="./images/Layer 21.png"  class="greater_btn"></button> 
-                        <div class="client_img"><img src="./images/Layer 19.png"></div>
+                        <button class="button client_div_button button1 common_btn"><img src="./images/greater-than.png"  class="greater_btn"></button>
+                        <button class="button client_div_button button2 common_btn"><img src="./images/less-than.png"  class="greater_btn"></button> 
+                        <button class="button client_div_button button3 common_btn"><img src="./images/Layer 21.png"  class="greater_btn"></button> 
+                        <div class="client_img"><img id="client_img" src="./images/Layer 19.png"></div>
                     </div>
                 </div>
             </div>
@@ -370,26 +372,26 @@
                                     <textarea class="contact_input input3" placeholder="Your Message"></textarea>
                                 </div>
                                 <div class="contact_button contact_divs">
-                                    <button>Submit</button>
+                                    <button class="common_btn">Submit</button>
                                 </div>
                             </div>
                             <div class="contact_icons">
                                 <div class="icon_row1">
-                                    <button class="call_button contact_icon_buttons"><img src="./images/call.png"></button>
+                                    <button class="call_button contact_icon_buttons common_btn"><img src="./images/call.png"></button>
                                     <div class="contact_no about">
                                         <h3 class="contact_icon_heading">Contact</h3>
                                         <p class="contact_icon_para">+91 987-654-321</p>
                                     </div>
                                 </div>
                                 <div class="icon_row2">
-                                    <button class="globe_button contact_icon_buttons"><img src="./images/globe.png"></button>
+                                    <button class="globe_button contact_icon_buttons common_btn"><img src="./images/globe.png"></button>
                                     <div class="website_info about">
                                         <h3 class="contact_icon_heading">Website</h3>
                                         <p class="contact_icon_para">sales@loremipsum.com</p>
                                     </div>
                                 </div>
                                 <div class="icon_row3">
-                                    <button class="location_button contact_icon_buttons"><img src="./images/location-pin (1).png"></button>
+                                    <button class="location_button contact_icon_buttons common_btn"><img src="./images/location-pin (1).png"></button>
                                     <div class="location_info about">
                                         <h3 class="contact_icon_heading">Location</h3>
                                         <p class="contact_icon_para">Level 8. Tower1, Umiya Business Bay. Cessena Tech Park, Outer Ring Road.
@@ -429,9 +431,9 @@
                     <p class="footer2_content_para">© 2022 All Rights Reserved.</p>
                 </div>
                 <div class="footer2_content footer2_buttons">
-                    <button class="footer2_share_button fb_icon"><img src="./images/facebook_icon.png"></button>
-                    <button class="footer2_share_button insta_icon"><img src="./images/insta_icon.png"></button>
-                    <button class="footer2_share_button linkedin_icon"><img src="./images/linkedin_icon.png"></button>
+                    <button class="footer2_share_button fb_icon common_btn"><img src="./images/facebook_icon.png"></button>
+                    <button class="footer2_share_button insta_icon common_btn"><img src="./images/insta_icon.png"></button>
+                    <button class="footer2_share_button linkedin_icon common_btn"><img src="./images/linkedin_icon.png"></button>
                 </div>
             </div>
         </section>  
