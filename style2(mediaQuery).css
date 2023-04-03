@@ -369,13 +369,12 @@
     .nav_links{
         display:none;
         width:0%;
+        transform:translateX(-100%);
+        transition:2s;
     }
 
     .checkbox{
         padding-right: 4%;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
     }
 
     #hamburger_icon{
@@ -393,6 +392,7 @@
         z-index: 1;
         background-color: #f4f4f4;
         width:40%;
+        transform:translateX(0%);
     }
     #check:checked ~ .nav_links a{
         padding: 10%;
