@@ -586,6 +586,11 @@
         padding: 8px;
         margin-bottom: 5%;
     }
+    .feature_card:hover{
+        transition:none;
+        transform:scale(1) !important;
+        box-shadow: none;
+    }
 
     .feature_icon_div {
         width: 8.5vw;
